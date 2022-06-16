@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2022 it is IT</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://www.e-mirim.hs.kr/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bounceIn.css">
+    <link rel="stylesheet" type="text/css" href="css/fade.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="whole">
+    <div class="top">
+        <table style="width:100%;height:30%;margin-bottom: 4%">
+            <tr>
+                <td width="28%">
+                    <img src="img/logo.png" class="logo_btn">
+                    <img src="img/date.png" width="45%" class="date_btn">
+                </td>
+                <td width="8%;" align="center">
+                    <div>
+                        <div class="menu_bg"></div>
+                        <a href="worldmap.html">
+                            <div class="menu">
+                                <p class="menu_title">
+                                    SW교과<br>작품전<br>보러가기<br>
+                                    __
+                                </p>
+
+                                <p class="menu_content">
+                                    뉴미디어소프트웨어과
+                                    뉴미디어웹솔루션과
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </td>
+                <td width="8%" align="center">
+                    <div>
+                        <div class="menu_bg"></div>
+                        <a href="worldmap.html">
+                            <div class="menu">
+                                <p class="menu_title">
+                                    디자인교과<br>작품전<br>보러가기<br>
+                                    __
+                                </p>
+
+                                <p class="menu_content">
+                                    뉴미디어디자인과
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </td>
+                <td width="18%" align="right" valign="bottom">
+                    <img src="img/job.png" width="35%" class="job_btn">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--slide show-->
+    <div class="slideshow-container slide1" id="slide">
+        <div class="slide_img" id="slide_img_1" style="width:100%; height:500px; background-color:red"></div>
+        <div class="slide_img" id="slide_img_2" style="width:100%; height:500px; background-color:orange"></div>
+        <div class="slide_img" id="slide_img_3" style="width:100%; height:500px; background-color:yellow"></div>
+        <div class="slide_img" id="slide_img_4" style="width:100%; height:500px; background-color:green"></div>
+    </div>
+    <!--end of slide show-->
+
+    <!--홍보영상-->
+    <div width="100%" style="margin-top:40%;margin-bottom:10%;text-align: center; position:relative;">
+        <font class="title">홍보영상</font><p><br>
+        <iframe class="video" height="450px" width="800" src="https://www.youtube.com/embed/BsDocgaTLVM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div><!--end of 홍보영상-->
+    <!--지도 및 오시는 길-->
+    <div class="comming">
+        <div id="map"></div>
+        <div class="way_info">
+            <font class="title">장소</font><p>
+            <font class="way">미림여자정보과학고 강당</font><p>
+            <font class="title">지하철 - 버스</font><p>
+            <font class="way">2호선 신림역 3번 출구<br>152, 5522 이용<br><br>2호선 서울대입구역 3번 출구<br>5517, 6515</font><p>
+            <font class="title">버스</font><p>
+            <font class="way">152, 5522, 5517, 6515</font><p>
+            <font class="title">인근주요도로</font><p>
+            <font class="way">강남순환고속도로<br>안양성남고속도로<br>남부순환고속도로</font><p>
+        </div>
+    </div>
+
+</div> <!--end of whole-->
+<footer style="padding:2%;">
+    <table class="footer" align="center" width="60%">
+        <tr class="footer_tr">
+            <td class="icon" width="80%">
+                <img class="icon_img" src="img/logo.png" width="23%"><p>
+            </td>
+            <td class="social" width="20%">
+                <a href="https://www.facebook.com/2019mirimit/" target="_blank"><img src="img/facebook.png" width="33px" style="margin-bottom:2px;"></a>
+                <a href="https://www.e-mirim.hs.kr/main.do" target="_blank"><img src="img/mirim.png" width="35px"></a>&nbsp;
+                <a href="https://www.facebook.com/24mirimcouncil/" target="_blank"><img src="img/council.png" width="40px" style="margin-left:2px; margin-bottom:2px;"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2 style="color:white;">
+                서울시 관악구 호암로 546 미림여자정보과학고등학교<br>
+                <b>대표전화 </b>02-872-4072&nbsp;&nbsp;&nbsp;<b>대외협력부 </b>02-888-8350&nbsp;&nbsp;&nbsp;<b>진로체험문의 </b>070-5099-8318<p>
+                <b>디자인 및 개발 </b>31기 학생회
+            </td>
+        </tr>
+    </table>
+</footer>
+
+<script>
+    /*slide show javascript*/
+    $(function(){
+        var slides=$('#slide').find('.slide_img');
+        var now=0, tot=2;
+
+        slides.each(function(i){
+            slides.eq(i).css({left:100*i+'%'});
+        });
+
+        setInterval(function(){
+            slides.each(function(i){
+                slides.eq(i).stop().animate({
+                    left:'-=100%'
+                }, 500, function(){
+                    if(slides.eq(i).css('left') <= '0'){
+                        slides.eq(i).css('left', '100%');
+                    }
+                });
+            });
+        },3000);
+    });
+</script>
+<script>
+    function initMap() {
+        // The location of Uluru
+        var uluru = {lat: 37.466324, lng: 126.9307193};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 16, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALGxUc_137U7QckuaK_C8Vh2oNgtCeiKI&callback=initMap">
+</script>
+</body>
+</html> 

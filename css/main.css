@@ -1,0 +1,261 @@
+
+@media screen and (min-width: 769px) {
+
+}
+html,body{
+    overflow-x: hidden;
+    margin:0;
+    background-color: #FFD655;
+}
+
+a{
+    color:#8C8C8C;
+    text-decoration:none;
+}
+
+.menu{
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+    margin:80px 5px 0px 5px;
+    width: 195px;
+    height:195px;
+    float:left;
+    border:1px solid white;
+    background-color:#FFD655;
+    position:relative;
+}
+
+.menu:hover{
+    background-color: #ffcc46;
+}
+
+.menu_title{
+    margin:20px 0 0 20px;
+    text-align:left;
+    font-size:16pt;
+    font-weight:bold;
+}
+
+.menu_content{
+    float:left;
+    margin:20px 0 0 20px;
+    text-align:left;
+    font-size:12pt;
+}
+
+.menu_bg{
+    width:195px;
+    height:195px;
+    float:left;
+    margin:100px 0 0 26px;
+    position:absolute;
+    background-color:#8C8C8C;
+}
+
+.title{
+    background-color:#8c8c8c;
+    padding:3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:#FFD655;
+    font-weight: bold;
+    font-size: 120%;
+
+}
+.zoom {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+.way{
+    color:#8C8C8C;
+    font-size:15px;
+}
+footer{
+    background-color: #242424;
+    margin:0;
+}
+.logo_btn{
+    width : 200px;
+    position: relative;
+    top: 45px;
+    left: 300px;
+    float:left;
+}
+.date_btn{
+    margin:80px 0px 0px 280px;
+    width: 120px;
+    height:80px;
+    float:left;
+    position: relative;
+}
+.job_btn{
+    float:left;
+    margin:0px 0px 45px 80px;
+}
+
+#slide{
+    width:100%;
+    float:left;
+    position:relative;
+}
+
+.slide_img{
+    width: 100%;
+    float:left;
+    position:absolute;
+}
+
+.top{
+    margin: 0px 0px 90px 0px;
+}
+
+/*======================================================================*/
+/*map*/
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 400px;  /* The width is the width of the web page */
+}
+.comming{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 100px;
+    width: 800px;
+}
+.way_info{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+    body{
+        margin: 0px;
+    }
+    .menu{
+        -webkit-animation-duration: 0.75s;
+        animation-duration: 0.75s;
+        -webkit-animation-name: bounceIn;
+        animation-name: bounceIn;
+        margin:30px 0px 0px 0px;
+        width: 110px;
+        height:110px;
+        float:left;
+        border:1px solid white;
+        background-color:#FFD655;
+        position:relative;
+    }
+
+    .menu_title{
+        margin:10px 0 0 10px;
+        text-align:left;
+        font-size:5pt;
+        font-weight:bold;
+    }
+
+    .menu_content{
+        float:left;
+        margin:10px 0 0 10px;
+        text-align:left;
+        font-size:3pt;
+    }
+
+    .menu_bg{
+        width:110px;
+        height:110px;
+        float:left;
+        margin:45px 0 0 15px;
+        position:absolute;
+        background-color:#8C8C8C;
+    }
+    .zoom {
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+    }
+    .title{
+        background-color:#8c8c8c;
+        padding:2px;
+        color:#FFD655;
+        font-weight: bold;
+        font-size: 90%;
+    }
+    .way{
+        color:#8C8C8C;
+        font-size:13px;
+    }
+    footer{
+        background-color: #242424;
+        font-size:12px;
+        margin:0;
+    }
+
+    /*======================================================================*/
+    /*map*/
+    #map {
+        height: 200px;  /* The height is 400 pixels */
+        width: 300px;  /* The width is the width of the web page */
+    }
+    .logo_btn{
+        width : 100px;
+        position: static;
+        float: left;
+        top: 0px;
+        left: 0px;
+        margin: 16px 50px 20px 85px;
+    }
+    .date_btn{
+        margin:24px 0px 0px 35px;
+        width: 50px;
+        display: none;
+    }
+    .job_btn{
+        margin:0px 25px 0px 0px;
+        display: none;
+    }
+
+    #slide{
+        width:100%;
+        height:500px;
+        float:left;
+        margin-bottom:50px;
+        position:relative;
+    }
+
+    .slide_img{
+        width: 100%;
+        position:absolute;
+    }
+
+    .top{
+        margin: 0px 0px 50px 0px;
+    }
+    .comming{
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .video{
+        height: 200px;
+        width: 300px;
+        position:relative;
+    }
+    .way_info{
+        margin-left: 10px;
+    }
+    .footer{
+        width: 80%;
+    }
+    .social{
+        width: 60%;
+    }
+    .icon{
+        width: 40%;
+    }
+    .icon_img{
+        width: 50%;
+    }
+    .footer_tr{
+        height: 80px;
+    }
+}

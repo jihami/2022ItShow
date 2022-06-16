@@ -25,7 +25,7 @@
                 <td width="8%;" align="center">
                     <div>
                         <div class="menu_bg"></div>
-                        <a href="worldmap.html">
+                        <a href="theme.html">
                             <div class="menu">
                                 <p class="menu_title">
                                     SW교과<br>작품전<br>보러가기<br>
@@ -66,7 +66,7 @@
 
     <!--slide show-->
     <div class="slideshow-container slide1" id="slide">
-        <div class="slide_img" id="slide_img_1" style="width:100%; height:500px; background-color:red"></div>
+        <img src="img/slide1.png" class="slide_img" id="slide_img_1" style="width:100%; height:500px;"/>
         <div class="slide_img" id="slide_img_2" style="width:100%; height:500px; background-color:orange"></div>
         <div class="slide_img" id="slide_img_3" style="width:100%; height:500px; background-color:yellow"></div>
         <div class="slide_img" id="slide_img_4" style="width:100%; height:500px; background-color:green"></div>
@@ -120,7 +120,7 @@
     /*slide show javascript*/
     $(function(){
         var slides=$('#slide').find('.slide_img');
-        var now=0, tot=2;
+        var now=0, tot=3;
 
         slides.each(function(i){
             slides.eq(i).css({left:100*i+'%'});
@@ -131,8 +131,8 @@
                 slides.eq(i).stop().animate({
                     left:'-=100%'
                 }, 500, function(){
-                    if(slides.eq(i).css('left') <= '0'){
-                        slides.eq(i).css('left', '100%');
+                    if(slides.eq(i).css('left') < '0'){
+                        slides.eq(i).css('left', '300%');
                     }
                 });
             });

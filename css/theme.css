@@ -67,7 +67,6 @@ body {
     text-decoration: none;
     border: rgba(75, 112, 253, 0.3) solid;
     border-width: 0 0 6px 0;
-
 }
 
 .link7 {
@@ -94,10 +93,46 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
-
+.pai_container{
+    position: absolute;
+    width: 40%;
+    right: 50px;
+    z-index: 50;
+}
+.pai{
+    position: relative;
+    width: 55%;
+    top: 0px;
+    /* opacity: 0; */
+    cursor: pointer;
+}
+.pai:hover{
+    opacity: 1;
+}
+.pai6_11{
+    top: 240px;
+    right: 8px;
+}
+.pai11_13{
+    position: relative;
+    bottom: 120px;
+}
+.pai6_11{
+    top: 240px;
+    right: 8px;
+}
+.pai6_11{
+    top: 240px;
+    right: 8px;
+}
+.pai6_11{
+    top: 240px;
+    right: 8px;
+}
 #clock_base {
     position: absolute;
     right: 200px;
     bottom: 50px;
     width: 40%;
+    /* cursor: pointer; */
 }

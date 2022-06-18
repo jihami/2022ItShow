@@ -1,103 +1,81 @@
-:root{
-    --main-color-yellow:#FFD655;
-    --weight-yellow:#f5bb00;
-    --light-yellow:#febf67;
-}
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
 body {
     background-color: rgb(255, 246, 194);
-    margin-top: 7vw;
-    margin-left: 13vw;
+}
+
+#title{
+    width:30%;
+    height:100%;
+    float:left;
+    position:relative;
+}
+
+#title > div{
+    width:100%;
+    float:left;
+    padding:20% 0 0 40%;
+    position:relative;
+}
+
+#back{
+    width:100%;
+    height:50px;
+    float:left;
+    color: #a8a8a8;
+    font-size:12pt;
+    font-weight:bold;
+    text-decoration:none;
+    position:relative;
 }
 
 .logo{
-    width: 200px;
+    width:200px;
+    position:relative;
 }
 
 .header-text{
-    background-color: var(--light-yellow);
     padding: 4px;
     padding-right: 7px;
     padding-left: 7px;
-    border-radius: 50px;
-    color: rgb(111, 110, 110);
+    color:#6F6E6EFF;
     font-weight: bolder;
+    border-radius: 50px;
+    background-color:#febf67;
+    position:relative;
 }
 .line{
     margin-top: 20px;
     width: 150px;
     margin-bottom: 20px;
-}
-#watch {
-    align-items: center;
-    text-align: center;
+    position:relative;
 }
 
-.btn {
-    font-size: 1.6vw;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-
-.btn:hover {
-    text-decoration: none;
-    border: rgba(75, 112, 253, 0.3) solid;
-    border-width: 0 0 6px 0;
-}
-
-.link7 {
-    position: relative;
-}
-
-.btn .sub {
-    display: block;
-    font-size: 0.6vw;
-    line-height: 20px;
-    opacity: 0;
-    transition: all 0.5s;
-    transform: translateY(-8px);
+#font{
+    width:100%;
+    background-color:#f5bb00;
 }
 
 h1 {
-    text-align: center;
-     /*margin-top: 2vw;*/
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: var(--weight-yellow);
+    width:80%;
+    margin-top:20px;
+    margin-bottom:30px;
+    text-align:center;
+    color:white;
     font-size: 2.5vw;
-    padding: 5px;
-    color: rgb(255, 255, 255);
+    position:relative;
 }
 
-#clock_base {
-    position: absolute;
-    right: 200px;
-    bottom: 50px;
-    width: 40%;
-    /* cursor: pointer; */
+#watch{
+    width:70%;
+    float:left;
 }
-.topic{
-    color: var(--weight-yellow);
-    background-color: white;
-    font-size: 1.5vw;
-    font-weight: bold;
-    padding: 10px;
-}
-#go{
-    text-align: center;
-    border: 1px ;
-    border-radius: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #FFF6C2FF;
-    font-size: 1.5vw;
-    padding: 5px;
-    color:  var(--weight-yellow);
-    text-decoration: underline;
+
+canvas{
+    float:left;
+    margin-left:20%;
+    position:relative;
 }

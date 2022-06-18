@@ -7,13 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <title>2022 it is IT</title>
 
 </head>
 <body>
 <div id="title">
   <div>
-    <img src="img/logo.png" class="logo">
+    <a href="index.html"><img src="img/logo.png" class="logo"></a>
     <hr class="line"/>
 
     <span class="header-text">오</span>
@@ -26,18 +29,20 @@
     <div id="font">
       <h1>슬기로운 개발 생활</h1>
     </div>
-    <a href="index.html" id="back">이전으로</a>
   </div>
 </div>
 
 <div id="watch">
   <!--        <img id="clock_base" src="./img/clock.png" alt="이미지파일">-->
 
-  <canvas width='800' height=800' id='canvas'></canvas>
+  <a href="#" class="page-link">
+    <canvas width='800' height='800' id='canvas'></canvas>
+</a>
 </div>
 
 <script>
   const canvas = document.getElementById('canvas');
+  const link = document.querySelector('.page-link');
   const ctx = canvas.getContext('2d');
 
   var width = canvas.clientWidth;
@@ -109,6 +114,8 @@
     var x = width/2 - x1;
     var y = height/2 - y1;
     var my_len = Math.sqrt(Math.abs(x * x) + Math.abs(y * y));  //삼각함수
+
+    link.href = ''; // 링크 초기화
     if(circle_len >= my_len){
       result1 = true;
     }
@@ -139,13 +146,35 @@
       ctx.moveTo(width / 2 , height / 2 );
       if(index == i){
         ctx.lineWidth = 2;
+        
+        link.hr
 
         switch (index){
-          case 0:ctx.strokeStyle='red'; break;
-          case 1:ctx.strokeStyle='yellow'; break;
-          case 2:ctx.strokeStyle='green'; break;
-          case 3:ctx.strokeStyle='blue'; break;
-          case 4:ctx.strokeStyle='purple'; break;
+          case 0:{
+            ctx.strokeStyle='red';  
+            link.href = 'https://github.com/';
+            break;
+          }
+          case 1:{
+            ctx.strokeStyle='yellow'; 
+            link.href = 'https://naver.com/';
+            break;
+          }
+          case 2:{
+            ctx.strokeStyle='green'; 
+            link.href = 'https://youtube.com/';
+            break;
+          }
+          case 3:{
+            ctx.strokeStyle='blue'; 
+            link.href = 'https://apple.com/';
+            break;
+          }
+          case 4:{
+            ctx.strokeStyle='purple'; 
+            link.href = 'https://google.com/';
+            break;
+          }
         }
 
         innRadius = radius * 1.1;
@@ -181,10 +210,9 @@
       var minus = ctx.measureText(txt).width / 2;  //텍스트 절반길이
       ctx.save();
       if(index == idx){
-        ctx.font = "normal bold 20px serif";
-
+        ctx.font = "normal 20px 'Noto Sans KR', sans-serif";
       } else {
-        ctx.font = "normal bold 20px serif";
+        ctx.font = "normal 20px 'Noto Sans KR', sans-serif";
         ctx.fontSize = '20pt'
       }
       ctx.fillText(txt, xx - minus, yy);

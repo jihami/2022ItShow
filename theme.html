@@ -19,21 +19,58 @@
   <span class="header-text">시</span>
   <span class="header-text">간</span>
   <span class="header-text">표</span>
-  <h1>슬기로운 개발 생활</h1><br><br><br><br><br><br><br><br><br><br><br>
-  <!-- <a href="index.html" class="back">이전으로</a> -->
+  <h1>슬기로운 개발 생활</h1>
+
+  <sapn id="morning" class="topic" onclick="topic(this.id)">아침</sapn
+  ><sapn id="lunch" class="topic" onclick="topic(this.id)">점심</sapn
+  ><sapn id="afternoon" class="topic" onclick="topic(this.id)">오후</sapn
+  ><sapn id="dinner" class="topic" onclick="topic(this.id)">저녁</sapn
+  ><sapn id="dawn" class="topic" onclick="topic(this.id)">새벽</sapn>
+
+  <br>
+  <button id="go" onclick="go()">이동하기</button>
+<!--   <a href="index.html" class="back">이전으로</a>-->
 </div>
 <div id="watch">
-  <div class="pai_container">
-    <a href="">
-      <img src="./img/pai6_11.png" alt="아침이미지" class="pai6_11 pai">
-    </a>
-    <a href=""><img src="./img/pai11_13.png" alt="점심이미지" class="pai11_13 pai" style="bottom: 500px"></a>
-    <a href=""><img src="./img/pai13_18.png" alt="오후이미지" class="pai13_18 pai"></a>
-    <a href=""><img src="./img/pai18_22.png" alt="저녁이미지" class="pai18_22 pai"></a>
-    <a href=""><img src="./img/pai22_6.png" alt="새벽이미지" class="pai22_6 pai"></a>
-  </div>
-  
-  <img id="clock_base" src="./img/clock_img3.png" alt="이미지파일">
+  <img id="clock_base" src="./img/clock.png" alt="이미지파일">
 </div>
+<script>
+  function topic(id){
+    let arr = ["morning","lunch","afternoon","dinner","dawn"]
+    for (let i = 0; i < 5; i++) {
+      document.getElementById(arr[i]).style.backgroundColor = 'white';
+      document.getElementById(arr[i]).style.color = '#F5BB00FF';
+    }
+    // console.log(id)
+    switch (id){
+      case "morning":
+        document.getElementById("morning").style.backgroundColor = '#C50909';
+        document.getElementById("morning").style.color = 'white';
+        document.getElementById("clock_base").src = "img/morning.png"
+        break;
+      case "lunch":
+        document.getElementById("lunch").style.backgroundColor = '#CD7106';
+        document.getElementById("lunch").style.color = 'white';
+        document.getElementById("clock_base").src = "img/lunch.png"
+        break;
+      case "afternoon":
+        document.getElementById("afternoon").style.backgroundColor = '#2F9039';
+        document.getElementById("afternoon").style.color = 'white';
+        document.getElementById("clock_base").src = "img/afternoon.png"
+        break;
+      case "dinner":
+        document.getElementById("dinner").style.backgroundColor = '#272B7D';
+        document.getElementById("dinner").style.color = 'white';
+        document.getElementById("clock_base").src = "img/dinner.png"
+        break;
+      case "dawn":
+        document.getElementById("dawn").style.backgroundColor = '#4C1B7D';
+        document.getElementById("dawn").style.color = 'white';
+        document.getElementById("clock_base").src = "img/dawn.png"
+        break;
+    }
+    return id
+  }
+</script>
 </body>
 </html>

@@ -37,24 +37,6 @@ body {
     text-align: center;
 }
 
-.pie-chart1 {
-    display: inline-block;
-    width: 30vw;
-    height: 30vw;
-    background: conic-gradient(#bfb2e1 0% 20%, #ffcf86 20% 40%, #ffecbc 40% 60%, #cdeabf 60% 80%, #b7c9e5 80% 100%);
-    border-radius: 50%;
-    margin: 1vw;
-}
-
-.watchback {
-    position: relative;
-    height: 32vw;
-    width: 32vw;
-    background-color: rgb(101, 101, 101);
-    border-radius: 50%;
-    display: inline-block;
-}
-
 .btn {
     font-size: 1.6vw;
     color: #333;
@@ -84,55 +66,38 @@ body {
 
 h1 {
     text-align: center;
-    /* margin-top: 2vw; */
+     /*margin-top: 2vw;*/
     margin-top: 15px;
-    margin-bottom: 5vw;
+    margin-bottom: 20px;
     background-color: var(--weight-yellow);
     font-size: 2.5vw;
     padding: 5px;
     color: rgb(255, 255, 255);
 }
 
-.pai_container{
-    position: absolute;
-    width: 40%;
-    right: 50px;
-    z-index: 50;
-}
-.pai{
-    position: relative;
-    width: 55%;
-    top: 0px;
-    /* opacity: 0; */
-    cursor: pointer;
-}
-.pai:hover{
-    opacity: 1;
-}
-.pai6_11{
-    top: 240px;
-    right: 8px;
-}
-.pai11_13{
-    position: relative;
-    bottom: 120px;
-}
-.pai6_11{
-    top: 240px;
-    right: 8px;
-}
-.pai6_11{
-    top: 240px;
-    right: 8px;
-}
-.pai6_11{
-    top: 240px;
-    right: 8px;
-}
 #clock_base {
     position: absolute;
     right: 200px;
     bottom: 50px;
     width: 40%;
     /* cursor: pointer; */
+}
+.topic{
+    color: var(--weight-yellow);
+    background-color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 10px;
+}
+#go{
+    text-align: center;
+    border: 1px ;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FFF6C2FF;
+    font-size: 1.5vw;
+    padding: 5px;
+    color:  var(--weight-yellow);
+    text-decoration: underline;
 }

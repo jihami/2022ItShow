@@ -5,6 +5,7 @@
 
 body {
     background-color: rgb(255, 246, 194);
+    overflow-x: hidden;
 }
 
 #title{
@@ -74,12 +75,17 @@ h1 {
 #watch{
     width:70%;
     float:left;
+    display:flex; 
+    overflow-x: hidden;
+    justify-content: center; 
+    align-items: center; 
 }
 
 canvas{
     float:left;
-    margin-left:20%;
+    margin-left:15%;
     position:relative;
     bottom: 50px;
     cursor: pointer;
+    overflow-x: hidden;
 }

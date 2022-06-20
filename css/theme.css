@@ -7,6 +7,7 @@
 body {
     background-color: rgb(255, 246, 194);
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #title{
@@ -91,7 +92,7 @@ h1 {
     overflow-x: hidden;
     justify-content: center;
     align-items: center;
-    margin-top:101px;
+    margin-top:61px;
 }
 
 canvas{
